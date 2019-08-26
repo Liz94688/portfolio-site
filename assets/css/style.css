@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+/*----------Welcome----------*/
+
+.welcome {
+    position: fixed;
+}
+
+.name {
+    padding-top: 10%;
+}
+
+.title {
+    margin-top: 15px;
+}
+
+#welcome-view {
+    background-attachment: fixed;
+    background-image: url('../images/welcome-view.jpg');
+    background-position: bottom;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/*----------About Me----------*/
+
+#about-me {
+    background-attachment: fixed;
+    background-image: url('../images/about-me.jpg');
+    background-position: bottom;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.container {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+    color: #fff;
+}
+
+.about-title {
+    padding-top: 10%;
+    color: #212F3D;
+}
+
+.about-p {
+    color: #212F3D;
+}
+
+/*----------Skills----------*/
+
+#skills-intro {
+    background-color: #393938;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.container {
+    margin: 0;
+}
+
+.skills-title {
+    padding-top: 10%;
+    color: #F7F9F9;
+}
+
+.skills-progression {
+    margin: 0;
+    color: #F7F9F9;
+}
+
+.row {
+    padding-left: 15px;
+    padding-bottom: 15px;
+    color: #283747
+}
+
+.progress {
+    position: relative;
+    height: 35px;
+    margin-bottom: 5px;
+}
+
+.progress-type {
+    position: absolute;
+    color: #283747;
+    left: 0px;
+    padding: 2px 30px 2px 5px;
+}
+
+/*----------Contact----------*/
+
+#contact-me {
+    background-attachment: fixed;
+    background-image: url('../images/contact-me.jpg');
+    background-position: bottom;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.container {
+    padding-top: 15px;
+}
+
+.contact-title {
+    margin: 0;
+    padding-top: 10%;
+}
+
+.contact-form {
+    max-width: 80%;
+}
+
+.contact-groups {
+    padding: 0;
+}
+
+/*----------Footer----------*/
+
+footer {
+    background-color: #D4E6F1;
+}
