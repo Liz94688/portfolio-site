@@ -1,66 +1,110 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap:100,200,300,400,500,600,700');
+
+/*------------------------------Header*/
+
+header {
     margin: 0;
-    padding: 0;
-    font-family: Montserrat, sans-serif;
 }
 
-/*----------Welcome----------*/
-
-.welcome {
-    position: fixed;
-}
-
-.name {
-    padding-top: 20%;
-    font-size: 3.5rem;
-}
-
-.title {
-    margin-top: 15px;
-    font-size: 2.5rem;
-}
-
-#welcome-view {
-    background-attachment: fixed;
+.header-image {
     background-image: url('../images/welcome-view.jpg');
-    background-position: bottom;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    min-height: 240px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
-/*----------About Me----------*/
-
-#about-me {
-    background-attachment: fixed;
-    background-image: url('../images/about-me.jpg');
-    background-position: bottom;
-    filter: grayscale(100%);
-    opacity: 0.5;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-.container {
-    margin: 0;
-    padding-top: 15px;
+.header-name {
+    font-weight: 200;
+    font-size: 80px;
+    color: #34495E;
+    margin-top: 20px;
     padding-left: 15px;
+}
+
+.header-title {
+    font-weight: 400;
+    font-size: 40px;
+    color: #34495E;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    padding-left: 15px;
+}
+
+/*------------------------------Header-Nav*/
+
+.col {
+    padding: 0;
+}
+
+ul {
+    background-color: #34495E;
+}
+
+li a {
+    color: #fff;
+    padding: 0;
+    text-decoration: none;
+}
+
+.list-inline-item:not(:last-child) {
+    margin: 0;
+}
+
+.header-nav-container {
+    font-size: 0;
+}
+
+#nav li {
+    padding: 0;
+}
+
+.header-nav-item {
+    height: 100px;
+    text-align: center;
+}
+
+.header-nav-item a {
+    width: 100%;
+    text-decoration: none;
     color: #fff;
 }
 
-.about-title {
-    padding-top: 10%;
-    color: #F7F9F9;
+.header-nav-item span {
+    display: block;
+    padding-top: 15px;
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
-.about-p {
-    color: #F7F9F9;
+.header-nav-color-home:hover {
+    background-color: #2980B9;
 }
+
+.header-nav-color-skills:hover {
+    background-color: #1ABC9C;
+}
+
+.header-nav-color-contact:hover {
+    background-color: #EC7063;
+}
+
+.header-nav-color-home.active {
+    background-color: #2980B9;
+}
+
+.header-nav-color-skills.active {
+    background-color: #1ABC9C;
+}
+
+.header-nav-color-contact.active {
+    background-color: #EC7063;
+}
+
+/*----------About Me----------*/
 
 /*----------Skills----------*/
 
@@ -79,10 +123,10 @@ body {
 
 .skills-title {
     padding-top: 10%;
-    color: #F7F9F9;    
+    color: #F7F9F9;
 }
 
-.skills-progression{
+.skills-progression {
     margin: 0;
     color: #F7F9F9;
 }
@@ -108,36 +152,33 @@ body {
 
 /*----------Contact----------*/
 
-#contact-me {
-    background-attachment: fixed;
-    background-image: url('../images/contact-me.jpg');
-    background-position: bottom;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-.container {
-    padding-top: 15px;
-}
-
-.contact-title {
-    margin: 0;
-    padding-top: 10%;
-}
-
-.contact-form {
-    max-width: 80%;
-}
-
-.contact-groups {
-    padding: 0;
-}
-
 /*----------Footer----------*/
 
 footer {
-    background-color: #D4E6F1;
+    min-height: 100px;
+    margin: 0;
 }
+
+.footer-nav {
+    background-color: #34495E;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.footer-nav-item {
+    height: 100px;
+    text-align: right;
+    padding: 15px 20px;
+    color: #fff;
+}
+
+.footer-nav-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-nav-item a i {
+    font-size: 20px;
+    padding: 10px;
+}
+
