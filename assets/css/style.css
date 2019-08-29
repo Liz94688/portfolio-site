@@ -4,6 +4,7 @@
 
 header {
     margin: 0;
+    padding: 0;
 }
 
 .header-image {
@@ -21,17 +22,17 @@ header {
     font-weight: 200;
     font-size: 80px;
     color: #34495E;
-    margin-top: 20px;
-    padding-left: 15px;
+    padding-top: 20px;
+    padding-left: 25px;
 }
 
 .header-title {
     font-weight: 400;
     font-size: 40px;
     color: #34495E;
-    margin-top: 15px;
-    margin-bottom: 50px;
-    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    padding-left: 25px;
 }
 
 /*------------------------------Header-Nav*/
@@ -40,15 +41,16 @@ header {
     padding: 0;
 }
 
-ul {
-    background-color: #34495E;
-}
-
 li a {
     color: #fff;
     padding: 0;
     text-decoration: none;
 }
+
+.row {
+    padding-bottom: 0;
+}
+
 
 .list-inline-item:not(:last-child) {
     margin: 0;
@@ -56,6 +58,10 @@ li a {
 
 .header-nav-container {
     font-size: 0;
+}
+
+.col ul {
+    margin-bottom: 0;
 }
 
 #nav li {
@@ -80,89 +86,152 @@ li a {
     letter-spacing: 1px;
 }
 
+/*------------------------------Navbar Colours/Background Colours*/
+
+ul {
+    background-color: #34495E;
+}
+
 .header-nav-color-home:hover {
-    background-color: #2980B9;
+    background-color: #4682B4;
 }
 
 .header-nav-color-skills:hover {
-    background-color: #1ABC9C;
+    background-color: #48D1CC;
 }
 
 .header-nav-color-contact:hover {
-    background-color: #EC7063;
+    background-color: #FFC0CB;
 }
 
 .header-nav-color-home.active {
-    background-color: #2980B9;
+    background-color: #4682B4;
 }
 
 .header-nav-color-skills.active {
-    background-color: #1ABC9C;
+    background-color: #48D1CC;
 }
 
 .header-nav-color-contact.active {
-    background-color: #EC7063;
+    background-color: #FFC0CB;
 }
 
-/*----------About Me----------*/
+.home-bg-color {
+    background-color: #4682B4;
+}
 
-/*----------Skills----------*/
+/*------------------------------So far...*/
 
-#skills-intro {
-    background-color: #393938;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    margin-bottom: 0px;
-    margin-top: 0px;
+section {
+    margin: 0;
+    padding: 0;
+}
+
+.about-container {
+    min-height: 500px;
+    background-color: rgba(70,130,180,0.8);
+    color: #34495E;
+    padding-bottom: 20px;
+}
+
+.so-far-title {
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.so-far-title h3 {
+    margin: 0;
+}
+
+.so-far-paragraph p {
+    margin-bottom: 15px;
+}
+
+/*------------------------------Timeline*/
+
+.timeline {
+  position: relative;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
 }
 
 .container {
+  padding: 10px 20px;
+  position: relative;
+  background-color: #34495E;
+  width: 50%;
+  color: #fff;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+/*------------------------------Skills*/
+
+.skills-container {
     margin: 0;
+    padding: 0;
+    min-height: 500px;
+    background-color: rgba(72,209,204,0.8);
+    color: #34495E;
+    padding-bottom: 20px;
 }
 
 .skills-title {
-    padding-top: 10%;
-    color: #F7F9F9;
-}
-
-.skills-progression {
-    margin: 0;
-    color: #F7F9F9;
-}
-
-.row {
+    padding-top: 15px;
     padding-left: 15px;
-    padding-bottom: 15px;
-    color: #283747
+    margin-bottom: 10px;
 }
 
-.progress {
-    position: relative;
-    height: 35px;
-    margin-bottom: 5px;
+..skills-title h3 {
+    margin: 0;
+}
+/*------------------------------Contact Info*/
+
+.contact-container {
+    padding: 0;
+    margin: 0;
+    min-height: 500px;
+    background-color: rgba(255,192,203,0.8);
+    color: #34495E;
+    padding-bottom: 20px;
 }
 
-.progress-type {
-    position: absolute;
-    color: #283747;
-    left: 0px;
-    padding: 2px 30px 2px 5px;
+/*------------------------------Contact Form*/
+
+.contact-form {
+    padding-top: 15px;
 }
 
-/*----------Contact----------*/
+.contact-groups {
+    padding: 0;
+}
 
-/*----------Footer----------*/
+/*------------------------------Footer*/
 
 footer {
     min-height: 100px;
     margin: 0;
+    padding: 0;
 }
 
 .footer-nav {
     background-color: #34495E;
-    margin-top: 15px;
-    margin-bottom: 50px;
 }
 
 .footer-nav-item {
@@ -182,3 +251,27 @@ footer {
     padding: 10px;
 }
 
+
+/*------------------------------IGNORE - TO DELETE*/
+
+.skills-prediction {
+    
+}
+
+.skills-row {
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.progress {
+    position: relative;
+    height: 35px;
+    margin-bottom: 5px;
+}
+
+.progress-type {
+    position: absolute;
+    color: #283747;
+    left: 0px;
+    padding: 2px 30px 2px 5px;
+}
