@@ -19,7 +19,7 @@ header {
 }
 
 .header-name {
-    font-weight: 200;
+    font-weight: 100;
     font-size: 80px;
     color: #34495E;
     padding-top: 20px;
@@ -27,7 +27,7 @@ header {
 }
 
 .header-title {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 40px;
     color: #34495E;
     padding-top: 15px;
@@ -101,7 +101,7 @@ ul {
 }
 
 .header-nav-color-contact:hover {
-    background-color: #FFC0CB;
+    background-color: #D98880;
 }
 
 .header-nav-color-home.active {
@@ -113,7 +113,7 @@ ul {
 }
 
 .header-nav-color-contact.active {
-    background-color: #FFC0CB;
+    background-color: #D98880;
 }
 
 .home-bg-color {
@@ -129,7 +129,7 @@ section {
 
 .about-container {
     min-height: 500px;
-    background-color: rgba(70,130,180,0.8);
+    background-color: rgba(70, 130, 180, 0.8);
     color: #34495E;
     padding-bottom: 20px;
 }
@@ -150,76 +150,143 @@ section {
 /*------------------------------Timeline*/
 
 .timeline {
-  position: relative;
-  margin: 0 auto;
+    position: relative;
+    margin: 0 auto;
 }
 
 .timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: #fff;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -2px;
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
 }
 
 .container {
-  padding: 10px 20px;
-  position: relative;
-  background-color: #34495E;
-  width: 50%;
-  color: #fff;
+    padding: 10px 20px;
+    position: relative;
+    background-color: #34495E;
+    width: 50%;
+    color: #fff;
+    margin-left: 0;
 }
 
 .left {
-  left: 0;
+    left: 0;
 }
 
 .right {
-  left: 50%;
+    left: 50%;
 }
 
 /*------------------------------Skills*/
 
 .skills-container {
     margin: 0;
-    padding: 0;
     min-height: 500px;
-    background-color: rgba(72,209,204,0.8);
+    background-color: rgba(72, 209, 204, 0.8);
     color: #34495E;
     padding-bottom: 20px;
 }
 
 .skills-title {
-    padding-top: 15px;
-    padding-left: 15px;
-    margin-bottom: 10px;
+    padding-top: 20px;
+    margin-bottom: 30px;
 }
 
-..skills-title h3 {
-    margin: 0;
+.skills-progression {
+    margin-bottom: 30px;
 }
+
+.progress {
+    height: 35px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0px;
+    color: #283747;
+    padding: 2px 30px 2px 5px;
+}
+
 /*------------------------------Contact Info*/
 
 .contact-container {
     padding: 0;
     margin: 0;
     min-height: 500px;
-    background-color: rgba(255,192,203,0.8);
+    background-color: rgba(217, 136, 128, 0.8);
     color: #34495E;
-    padding-bottom: 20px;
+}
+
+.contact-row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.contact-info {
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-details-title {
+    margin-bottom: 20px;
+}
+
+.contact-details-itemised {
+    margin-bottom: 20px;
+}
+
+.contact-details-itemised .key,
+.contact-details-itemised .value {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.contact-details-itemised .key p,
+.contact-details-itemised .value p {
+    margin: 0;
+}
+
+.contact-details-itemised .key {
+    width: 30%;
+}
+
+.contact-details-itemised .value {
+    position: relative;
+    width: 60%;
+}
+
+.contact-details-itemised .key p {
+    font-weight: 600;
+}
+
+.contact-details-itemised .value p {
+    font-weight: 200;
 }
 
 /*------------------------------Contact Form*/
 
 .contact-form {
     padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-form-title {
+    margin-bottom: 20px;
 }
 
 .contact-groups {
     padding: 0;
+}
+
+form {
+    margin: 5px;
 }
 
 /*------------------------------Footer*/
@@ -253,25 +320,3 @@ footer {
 
 
 /*------------------------------IGNORE - TO DELETE*/
-
-.skills-prediction {
-    
-}
-
-.skills-row {
-    padding-left: 15px;
-    padding-bottom: 15px;
-}
-
-.progress {
-    position: relative;
-    height: 35px;
-    margin-bottom: 5px;
-}
-
-.progress-type {
-    position: absolute;
-    color: #283747;
-    left: 0px;
-    padding: 2px 30px 2px 5px;
-}
