@@ -13,6 +13,8 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 240px;
+    max-width: 100%;
+    margin: 0;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -144,7 +146,7 @@ section {
 }
 
 .so-far-paragraph p {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 /*------------------------------Timeline*/
@@ -285,8 +287,10 @@ section {
     padding: 0;
 }
 
-form {
-    margin: 5px;
+.centre-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
 }
 
 /*------------------------------Footer*/
@@ -318,5 +322,57 @@ footer {
     padding: 10px;
 }
 
+.footer-nav-item p {
+    margin: 0;
+}
 
-/*------------------------------IGNORE - TO DELETE*/
+/*------------------------------Media Queries*/
+
+@media(max-width: 600px) {
+    .header-title {
+        font-weight: 200;
+        font-size: 40px;
+        color: #34495E;
+        padding-top: 25px;
+        padding-bottom: 40px;
+        padding-left: 25px;
+    }
+}
+
+@media(min-width: 768px) {
+    .timeline {
+        max-width: 90%;
+    }
+}
+
+@media(min-width: 768px) {
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        background-color: #fff;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -2px;
+    }
+}
+
+@media(min-width: 992px) {
+    .centre-form {
+        padding-top: 30px;
+        margin: 0 auto;
+        max-width: 80%;
+    }
+}
+
+@media(min-width: 768px) {
+    .footer-nav-item {
+        height: 100px;
+        text-align: right;
+        padding: 15px 15px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 400;
+    }
+}
