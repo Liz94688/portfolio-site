@@ -106,18 +106,6 @@ ul {
     background-color: #D98880;
 }
 
-.header-nav-color-home.active {
-    background-color: #4682B4;
-}
-
-.header-nav-color-skills.active {
-    background-color: #48D1CC;
-}
-
-.header-nav-color-contact.active {
-    background-color: #D98880;
-}
-
 .home-bg-color {
     background-color: #4682B4;
 }
@@ -201,6 +189,8 @@ section {
 
 .skills-progression {
     margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .progress {
@@ -212,7 +202,7 @@ section {
 .progress-type {
     position: absolute;
     left: 0px;
-    color: #283747;
+    color: #34495E;
     padding: 2px 30px 2px 5px;
 }
 
@@ -233,26 +223,34 @@ section {
 
 .contact-info {
     padding-top: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .contact-details-title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.contact-details-title h3 {
+    margin: 0;
 }
 
 .contact-details-itemised {
     margin-bottom: 20px;
+    padding: 0;
 }
 
 .contact-details-itemised .key,
 .contact-details-itemised .value {
     display: inline-block;
     padding-right: 10px;
+    margin-bottom: 45px;
 }
 
 .contact-details-itemised .key p,
 .contact-details-itemised .value p {
     margin: 0;
+    font-size: 20px;
 }
 
 .contact-details-itemised .key {
@@ -275,12 +273,17 @@ section {
 /*------------------------------Contact Form*/
 
 .contact-form {
-    padding-top: 15px;
+    padding-top: 5px;
     margin-bottom: 20px;
 }
 
+.form-info {
+    padding: 0;
+    font-size: 20px;
+}
+
 .contact-form-title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .contact-groups {
@@ -290,7 +293,7 @@ section {
 .centre-form {
     padding-top: 10px;
     margin: 0 auto;
-    max-width: 70%;
+    max-width: 85%;
 }
 
 /*------------------------------Footer*/
@@ -326,7 +329,7 @@ footer {
     margin: 0;
 }
 
-/*------------------------------Media Queries*/
+/*------------------------------Media Queries for Header/Footer*/
 
 @media(max-width: 600px) {
     .header-title {
@@ -338,6 +341,19 @@ footer {
         padding-left: 25px;
     }
 }
+
+@media(min-width: 768px) {
+    .footer-nav-item {
+        height: 100px;
+        text-align: right;
+        padding: 15px 15px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 200;
+    }
+}
+
+/*------------------------------Media Queries for Home*/
 
 @media(min-width: 768px) {
     .timeline {
@@ -362,17 +378,43 @@ footer {
     .centre-form {
         padding-top: 30px;
         margin: 0 auto;
-        max-width: 80%;
+        max-width: 85%;
+    }
+}
+
+/*------------------------------Media Queries for Skills*/
+
+@media(max-width: 600px) {
+    .skills-progression {
+        font-size: 18px;
+        font-weight: 500;
     }
 }
 
 @media(min-width: 768px) {
-    .footer-nav-item {
-        height: 100px;
-        text-align: right;
-        padding: 15px 15px;
-        color: #fff;
-        font-size: 25px;
+    .progress {
+        height: 55px;
+        margin-bottom: 25px;
+    }
+}
+
+@media(min-width: 768px) {
+    .progress-type {
+        position: absolute;
+        left: 0px;
+        color: #34495E;
+        padding: 5px 62px 5px 11px;
+        font-size: 20px;
         font-weight: 400;
+    }
+}
+
+/*------------------------------Media Queries for Contact*/
+
+@media(min-width: 768px) {
+    .centre-form {
+        padding-top: 10px;
+        margin: 0 auto;
+        max-width: 90%;
     }
 }
